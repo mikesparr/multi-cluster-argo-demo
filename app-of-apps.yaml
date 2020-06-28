@@ -12,5 +12,5 @@ spec:
   project: default
   source:
     path: applications
-    repoURL: https://github.com/mikesparr/multi-cluster-argo-cd
+    repoURL: https://github.com/mikesparr/multi-cluster-argo-demo
     targetRevision: HEAD
