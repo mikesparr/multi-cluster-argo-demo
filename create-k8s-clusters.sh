@@ -35,6 +35,10 @@ install_argo_cd () {
     kubectl create namespace argocd
     kubectl apply -n argocd \
         -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+    # configure app-of-apps git repo
+    echo "Configuring app-of-apps repo ..."
+    kubectl apply -f app-of-apps.yaml
 }
 
 create_cluster () {
