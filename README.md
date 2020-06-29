@@ -23,7 +23,7 @@ EOF
 5. Log into your clusters after 8-10 minutes and confirm you have `east` and `west` clusters and both have the configurations in the `k8s-config/` folder.
 ![Clusters created](gcp-east-west-clusters.png)
 ![Argo CD installed](gcp-argo-cd-installed.png)
-6. Create your own repo and change the `app-of-apps.yaml` to point to your repo instead.
+6. Create your own repo and change the `app-of-apps.yaml` and `k8s-config.yaml` to point to your repo instead.
 7. Enjoy!
 
 # References
