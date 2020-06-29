@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-export PROJECT_ID=mike-argo-demo
-export AUTH_NETWORK="174.45.73.139/32"
+source .env
 
 # enable apis
 gcloud services enable container.googleapis.com # Kubernetes Engine API
