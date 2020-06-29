@@ -10,7 +10,7 @@ and whenever I push changes in this repo, they will automatically apply the chan
 ![Architecture](architecture-argocd-config.png)
 
 # Usage
-1. Create or use an existing Google Cloud Platform project
+1. Create or use an existing Google Cloud Platform project (demo purposes but any clusters should work)
 2. Clone this repository to your computer, cd to `multi-cluster-argo-demo`
 3. Create a `.env` file in the same directory as `create-k8s-clusters.sh`
 ```bash
