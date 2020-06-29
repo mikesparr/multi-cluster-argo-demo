@@ -39,6 +39,21 @@ echo "Argo default pass: ${ARGO_PASS}"
 9. Create your own repo and change the `app-of-apps.yaml` and `k8s-config.yaml` to point to your repo instead.
 10. Enjoy!
 
+# Cleanup
+If you are just trying this out, then to avoid unnecessary expense either delete your project or 
+remove the recently-created clusters using the commands below:
+
+```
+gcloud container clusters delete west --zone us-west2-b
+gcloud container clusters delete east --zone us-east1-c
+```
+
+# Potential next steps
+- read about private repositories
+- use Argo CD `projects` 
+- use recursive directories
+- add application workloads as well as cluster config
+
 # References
 - [Cluster Bootstrapping with App of Apps pattern](https://argoproj.github.io/argo-cd/operator-manual/cluster-bootstrapping/)
 - [Anthos Config Management](https://cloud.google.com/anthos/config-management) (inspiration)
