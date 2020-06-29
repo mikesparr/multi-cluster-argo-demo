@@ -32,8 +32,8 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443 &
 export ARGO_PASS=$(kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o name | cut -d'/' -f 2)
 echo "Argo default pass: ${ARGO_PASS}"
 ```
-7. Open browser to `http://localhost:8080` (accept security warning) and use `admin` and `<PASSWORD FROM ABOVE>` to confirm applications synched
-![Apps synched in Argo UI](argo-cd-k8s-config.png)
+7. Open browser to `http://localhost:8080` (accept security warning) and use `admin` and `<PASSWORD FROM ABOVE>` to confirm applications synced
+![Apps synced in Argo UI](argo-cd-k8s-config.png)
 8. Confirm your clusters have the `namespace`, `serviceaccount`, `role`, `rolebinding` declared in the `k8s-config/` folder
 ![Confirmed new namespace exists](argo-cd-namespace.png)
 9. Create your own repo and change the `app-of-apps.yaml` and `k8s-config.yaml` to point to your repo instead.
