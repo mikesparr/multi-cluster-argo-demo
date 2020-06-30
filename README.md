@@ -48,6 +48,10 @@ gcloud container clusters delete west --zone us-west2-b
 gcloud container clusters delete east --zone us-east1-c
 ```
 
+# Video Demo
+If you want to see this demo in action, view the YouTube video below
+![ArgoCD Kubernetes Multi-Cluster Config Demo](https://img.youtube.com/vi/7p-zI-OMZZU/0.jpg) (https://youtu.be/7p-zI-OMZZU)
+
 # Potential next steps
 - read about private repositories
 - use Argo CD `projects` 
